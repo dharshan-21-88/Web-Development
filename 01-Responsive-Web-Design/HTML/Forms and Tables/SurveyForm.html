@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Tech LearnHub Course Feedback Form</h1>
+
+    <p id="description">
+      Thank you for taking a few minutes to share your learning experience with
+      us.
+    </p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Full Name: </label>
+      <input
+        type="text"
+        id="name"
+        required
+        placeholder="Enter your full name"
+      /><br />
+      <label for="email" id="email-label">Email Address: </label>
+      <input
+        type="email"
+        id="email"
+        required
+        placeholder="Enter a valid email address"
+      /><br />
+      <label for="number" id="number-label"
+        >Years of Coding Experience (optional):
+      </label>
+      <input
+        type="number"
+        id="number"
+        placeholder="Enter age or years of experience"
+        min="0"
+        max="40"
+      /><br />
+      <label for="desc">Which option best describes your current status?</label
+      ><br />
+      <select id="dropdown">
+        <option id="0" disabled selected>Select current status</option>
+        <option id="1">High School Student</option>
+        <option id="2">University Student</option>
+        <option id="3">Software Engineer</option>
+        <option id="4">Career Switcher</option>
+        <option id="5">Other</option></select
+      ><br />
+
+      <label for="recommend"
+        >Would you recommend Tech LearnHub to a friend or colleague?</label
+      >
+      <fieldset>
+        <label for="">Definitely</label>
+        <input type="radio" name="recommend" value="definitely" />
+        <label for="">Maybe</label>
+        <input type="radio" name="recommend" value="maybe" />
+        <label for="">Not sure</label>
+        <input type="radio" name="recommend" value="notsure" />
+      </fieldset>
+      <label for="">What was your favorite part of the curriculum?</label>
+      <select id="dropdown-favourite">
+        <option id="0" disabled selected>Select an option</option>
+        <option id="1">Interactive Code Editor</option>
+        <option id="2">Guided Video Tutorials</option>
+        <option id="3">Hands-on Capstone Projects</option>
+        <option id="4">Discord Community Support</option></select
+      ><br />
+      <label for="next"
+        >Which topics would you like to explore next? (Check all that
+        apply)</label
+      ><br />
+      <input type="checkbox" id="op1" value="fullstack" />
+      <label for="op1">Full-Stack Web Development</label>
+
+      <input type="checkbox" id="op2" value="aiml" />
+      <label for="op2">Artificial Intelligence & Machine Learning</label>
+
+      <input type="checkbox" id="op3" value="mobapp" />
+      <label for="op3">Mobile App Development (React Native / Flutter)</label>
+
+      <input type="checkbox" id="op4" value="ccdev" />
+      <label for="op4">Cloud Computing & DevOps</label>
+
+      <input type="checkbox" id="op5" value="cyber" />
+      <label for="op5">Cybersecurity Fundamentals</label>
+
+      <input type="checkbox" id="op6" value="dsa" />
+      <label for="op6">Data Structures & Algorithms</label>
+
+      <input type="checkbox" id="op7" value="uiux" />
+      <label for="op7">UI/UX Design Essentials</label>
+
+      <input type="checkbox" id="op8" value="techinter" />
+      <label for="op8">Technical Interview Preparation</label><br />
+
+      <label>Any additional comments, features, or suggestions?</label>
+      <textarea placeholder="(Enter your feedback here)"></textarea><br />
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
