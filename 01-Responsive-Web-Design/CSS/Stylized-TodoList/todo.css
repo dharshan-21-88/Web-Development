@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: gray;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+}
+
+main {
+  list-style-position: inside;
+  width: 400px;
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  margin: auto;
+  margin-top: 45px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.todo-list > li {
+  background-color: beige;
+  width: 300px;
+  margin-bottom: 15px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.sub-item-link:link {
+  color: blue;
+}
+
+.sub-item-link:hover {
+  color: red;
+}
+
+.sub-item-link:visited {
+  color: purple;
+}
+
+.sub-item-link:active {
+  color: orange;
+}
+.sub-item-link:focus {
+  outline: 2px solid green;
+}
