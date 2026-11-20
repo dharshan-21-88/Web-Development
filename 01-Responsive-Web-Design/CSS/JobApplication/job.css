@@ -1,0 +1,35 @@
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border: 2px solid red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border: 2px solid green;
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: skyblue;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: orange;
+  background-color: green;
+  box-shadow: 0 0 5px #000;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: blue;
+}
+
+input:first-of-type {
+  background-color: lightgreen;
+}
